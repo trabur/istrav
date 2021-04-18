@@ -7,6 +7,13 @@ $ git clone git@github.com:trabur/istrav.git
 $ cd istrav
 ```
 
+# pull latest git changes
+```fish
+$ git submodule update --init --recursive
+$ git submodule foreach --recursive git fetch
+$ git submodule foreach git merge origin master
+```
+
 # create config file
 ```bash
 $ touch .env
@@ -27,11 +34,6 @@ AWS_SECRET_KEY=""
 ```fish
 $ npm run install
 $ npm run dev
-```
-
-# pull latest git changes
-```fish
-$ git submodule update --recursive
 ```
 
 # tag a vew version
