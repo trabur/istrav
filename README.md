@@ -1,6 +1,16 @@
 ISTRAV
 ========
 
+# release version
+```fish
+$ npm version v0.9.1
+
+$ git add .
+$ git commit -m ""
+$ git push
+
+$ npm run tag
+```
 
 ```fish
 $ git submodule add https://github.com/trabur/istrav-load-balancer
