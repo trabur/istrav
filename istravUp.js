@@ -18,7 +18,7 @@ async function main () {
     inputs: {
       stackId: 'istrav.com',
       planId: 'tardigrade',
-      version: istravPackage.version,
+      VERSION: istravPackage.version,
       ACK_DOMAIN: 'hacktracks.org',
       HEADLESS_DOMAIN: 'farmerless.com',
       POSTGRESQL_URI: process.env.POSTGRESQL_URI,
