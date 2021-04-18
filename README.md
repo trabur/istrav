@@ -47,7 +47,7 @@ $ npm run dev
 
 # tag a vew version
 ```fish
-$ npm version v0.10
+$ npm version v0.9.2
 
 $ git add .
 $ git commit -m ""
