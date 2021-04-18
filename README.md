@@ -30,9 +30,18 @@ AWS_ACCESS_KEY=""
 AWS_SECRET_KEY=""
 ```
 
+update the rest of the project with .env files
+```bash
+$ cp .env ./istrav-api/.env
+```
+
 # run istrav locally
 ```fish
-$ npm run install
+$ npm intall
+
+# jumps into each directory and runs npm install
+$ npm run init
+# jumps into each directory and starts up node.js 
 $ npm run dev
 ```
 

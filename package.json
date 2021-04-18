@@ -12,10 +12,29 @@
     "tag:marketing": "cd istrav-marketing && git tag v$npm_package_version && git push --tags",
     "tag:storefront": "cd istrav-storefront && git tag v$npm_package_version && git push --tags",
     "tag:channel": "cd istrav-channel && git tag v$npm_package_version && git push --tags",
-    "tag:forum": "cd istrav-forum && git tag v$npm_package_version && git push --tags"
+    "tag:forum": "cd istrav-forum && git tag v$npm_package_version && git push --tags",
+    "init": "npm run init:load-balancer && npm run init:api && npm run init:headless && npm run init:admin && npm run init:marketing && npm run init:storefront && npm run init:channel && npm run init:forum",
+    "init:load-balancer": "cd istrav-load-balancer && npm install",
+    "init:api": "cd istrav-api && npm install",
+    "init:headless": "cd istrav-headless && npm install",
+    "init:admin": "cd istrav-admin && npm install",
+    "init:marketing": "cd istrav-marketing && npm install",
+    "init:storefront": "cd istrav-storefront && npm install",
+    "init:channel": "cd istrav-channel && npm install",
+    "init:forum": "cd istrav-forum && npm install",
+    "dev": "concurrently -n lb,api,headless,admin,marketing,storefront,channel,forum \"npm run dev:load-balancer\" \"npm run dev:api\" \"npm run dev:headless\" \"npm run dev:admin\" \"npm run dev:marketing\" \"npm run dev:storefront\" \"npm run dev:channel\" \"npm run dev:forum\"",
+    "dev:load-balancer": "echo \"nginx is only used in production\"",
+    "dev:api": "cd istrav-api && export PORT=1337; npm start",
+    "dev:headless": "cd istrav-headless && export PORT=9999; npm start",
+    "dev:admin": "cd istrav-admin && export PORT=5280; npm run dev",
+    "dev:marketing": "cd istrav-marketing && export PORT=8000; npm run dev",
+    "dev:storefront": "cd istrav-storefront && export PORT=7000; npm run dev",
+    "dev:channel": "cd istrav-channel && export PORT=6000; npm run dev",
+    "dev:forum": "cd istrav-forum && export PORT=5000; npm run dev"
   },
   "dependencies": {
     "@octokit/rest": "^18.5.2",
+    "concurrently": "^6.0.2",
     "dotenv": "^8.2.0",
     "octokit": "^1.0.0"
   }
