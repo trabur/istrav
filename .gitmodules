@@ -22,3 +22,6 @@
 [submodule "istrav-forum"]
 	path = istrav-forum
 	url = https://github.com/trabur/istrav-forum
+[submodule "istrav-tinderbox"]
+	path = istrav-tinderbox
+	url = https://github.com/trabur/istrav-tinderbox

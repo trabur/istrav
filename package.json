@@ -2,6 +2,7 @@
   "name": "istrav",
   "version": "0.9.1",
   "scripts": {
+    "trigger:istravUp": "node istravUp.js",
     "version": "echo v$npm_package_version",
     "tag": "npm run tag:load-balancer && npm run tag:api && npm run tag:headless && npm run tag:admin && npm run tag:marketing && npm run tag:storefront && npm run tag:channel && npm run tag:forum",
     "tag:load-balancer": "cd istrav-load-balancer && git tag v$npm_package_version && git push --tags",
@@ -14,6 +15,8 @@
     "tag:forum": "cd istrav-forum && git tag v$npm_package_version && git push --tags"
   },
   "dependencies": {
-    "concurrently": "^6.0.2"
+    "@octokit/rest": "^18.5.2",
+    "dotenv": "^8.2.0",
+    "octokit": "^1.0.0"
   }
 }
