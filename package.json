@@ -1,6 +1,6 @@
 {
   "name": "istrav",
-  "version": "0.9",
+  "version": "0.9.1",
   "scripts": {
     "version": "echo v$npm_package_version",
     "tag": "npm run tag:load-balancer && npm run tag:api && npm run tag:headless && npm run tag:admin && npm run tag:marketing && npm run tag:storefront && npm run tag:channel && npm run tag:forum",
