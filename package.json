@@ -1,6 +1,6 @@
 {
   "name": "istrav",
-  "version": "0.5",
+  "version": "0.8",
   "scripts": {
     "version": "echo v$npm_package_version",
     "tag": "concurrently \"npm run tag:load-balancer\" \"npm tun tag:api\" \"npm tun tag:headless\" \"npm tun tag:admin\" \"npm tun tag:marketing\" \"npm tun tag:storefront\" \"npm tun tag:channel\" \"npm tun tag:forum\"",
