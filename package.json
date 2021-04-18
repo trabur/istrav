@@ -1,0 +1,19 @@
+{
+  "name": "istrav",
+  "version": "0.5",
+  "scripts": {
+    "version": "echo v$npm_package_version",
+    "tag": "concurrently \"npm run tag:load-balancer\" \"npm tun tag:api\" \"npm tun tag:headless\" \"npm tun tag:admin\" \"npm tun tag:marketing\" \"npm tun tag:storefront\" \"npm tun tag:channel\" \"npm tun tag:forum\"",
+    "tag:load-balancer": "cd istrav-load-balancer && git tag v$npm_package_version && git push --tags",
+    "tag:api": "cd istrav-api && git tag v$npm_package_version && git push --tags",
+    "tag:headless": "cd istrav-headless && git tag v$npm_package_version && git push --tags",
+    "tag:admin": "cd istrav-admin && git tag v$npm_package_version && git push --tags",
+    "tag:marketing": "cd istrav-marketing && git tag v$npm_package_version && git push --tags",
+    "tag:storefront": "cd istrav-storefront && git tag v$npm_package_version && git push --tags",
+    "tag:channel": "cd istrav-channel && git tag v$npm_package_version && git push --tags",
+    "tag:forum": "cd istrav-forum && git tag v$npm_package_version && git push --tags"
+  },
+  "dependencies": {
+    "concurrently": "^6.0.2"
+  }
+}

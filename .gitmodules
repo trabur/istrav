@@ -1,0 +1,24 @@
+[submodule "istrav-api"]
+	path = istrav-api
+	url = https://github.com/trabur/istrav-api
+[submodule "istrav-load-balancer"]
+	path = istrav-load-balancer
+	url = https://github.com/trabur/istrav-load-balancer
+[submodule "istrav-headless"]
+	path = istrav-headless
+	url = https://github.com/trabur/istrav-headless
+[submodule "istrav-admin"]
+	path = istrav-admin
+	url = https://github.com/trabur/istrav-admin
+[submodule "istrav-marketing"]
+	path = istrav-marketing
+	url = https://github.com/trabur/istrav-marketing
+[submodule "istrav-storefront"]
+	path = istrav-storefront
+	url = https://github.com/trabur/istrav-storefront
+[submodule "istrav-channel"]
+	path = istrav-channel
+	url = https://github.com/trabur/istrav-channel
+[submodule "istrav-forum"]
+	path = istrav-forum
+	url = https://github.com/trabur/istrav-forum
