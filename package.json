@@ -26,11 +26,11 @@
     "dev:load-balancer": "echo \"nginx is only used in production\"",
     "dev:api": "cd istrav-api && export PORT=1337; npm start",
     "dev:headless": "cd istrav-headless && export PORT=9999; npm start",
-    "dev:admin": "cd istrav-admin && export PORT=5280; npm run dev",
-    "dev:marketing": "cd istrav-marketing && export PORT=8000; npm run dev",
-    "dev:storefront": "cd istrav-storefront && export PORT=7000; npm run dev",
-    "dev:channel": "cd istrav-channel && export PORT=6000; npm run dev",
-    "dev:forum": "cd istrav-forum && export PORT=5000; npm run dev"
+    "dev:admin": "# cd istrav-admin && export PORT=5280; npm run dev",
+    "dev:marketing": "# cd istrav-marketing && export PORT=8000; npm run dev",
+    "dev:storefront": "# cd istrav-storefront && export PORT=7000; npm run dev",
+    "dev:channel": "# cd istrav-channel && export PORT=6000; npm run dev",
+    "dev:forum": "# cd istrav-forum && export PORT=5000; npm run dev"
   },
   "dependencies": {
     "@octokit/rest": "^18.5.2",
