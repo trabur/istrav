@@ -64,7 +64,7 @@ $ npm run version
 # release version to production
 note: after tagging wait for docker containers to build then run this...
 ```fish
-npm run trigger:istravUp
+$ npm run trigger:istravUp
 ```
 
 # git submodules used
