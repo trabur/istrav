@@ -1,6 +1,6 @@
 {
   "name": "istrav",
-  "version": "0.9.10",
+  "version": "0.9.11",
   "scripts": {
     "trigger:istravUp": "node istravUp.js",
     "version": "echo v$npm_package_version",
